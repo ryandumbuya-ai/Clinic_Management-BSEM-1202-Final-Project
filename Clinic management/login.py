@@ -183,7 +183,7 @@ class LoginWindow:
         """Open register window"""
         from register import RegisterWindow
         
-        # Hide login window
+        # Hide login window page
         self.root.withdraw()
         
         # Create new window for registration
