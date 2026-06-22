@@ -170,7 +170,7 @@ class Dashboard:
                         bg=self.bg_color)
         title.pack(anchor=tk.W, pady=(0, 20))
         
-        # Statistics cards
+        # Statistics cards display
         cards_frame = tk.Frame(self.main_content, bg=self.bg_color)
         cards_frame.pack(fill=tk.X, pady=(0, 30))
         
@@ -292,5 +292,5 @@ class Dashboard:
     
     def logout(self):
         """Handle logout"""
-        if messagebox.askyesno("Logout", "Are you sure you want to logout?"):
+        if messagebox.askyesno("Logout", "Do you want to logout?"):
             self.root.destroy()
